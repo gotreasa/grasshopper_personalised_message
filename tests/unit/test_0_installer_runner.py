@@ -30,3 +30,8 @@ def describe_greet():
         """🧪 should say Hello boss when ower is Conor and the name is Conor"""
 
         assert personalised_message.greet("Conor", "Conor") == "Hello boss"
+
+    def should_say_hello_boss_matching_different_cases():
+        """🧪 should say Hello boss when ower is owen and the name is Owen"""
+
+        assert personalised_message.greet("owen", "Owen") == "Hello boss"
