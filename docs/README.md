@@ -7,3 +7,14 @@
 [![Can I Deploy main to test](https://gotreasa.pactflow.io/pacticipants/grasshopper_personalised_message_app/branches/main/latest-version/can-i-deploy/to-environment/test/badge)](https://gotreasa.pactflow.io/hal-browser/browser.html#https://gotreasa.pactflow.io/pacticipants/grasshopper_personalised_message_app/branches/main/latest-version/can-i-deploy/to-environment/test/badge)
 
 Welcome to the Python Template created via a cookiecutter recipe. The project template is designed for a development via a `Double Loop approach` (BDD-TDD) using pytest and several other pytest libs.
+
+## Description
+
+Create a function that gives a personalized greeting. This function takes two parameters: `name` and `owner`.
+
+Use conditionals to return the proper message:
+
+| case              | return        |
+| ----------------- | ------------- |
+| name equals owner | 'Hello boss'  |
+| otherwise         | 'Hello guest' |
