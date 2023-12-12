@@ -5,6 +5,8 @@ def greet(owner: str, name: str) -> str:
         return "Hello boss"
     if owner == "owen":
         return "Hello boss"
+    if owner == "owen Williams":
+        return "Hello boss"
     if owner == "Sam":
         return "Hello guest"
     if not isinstance(name, str):
