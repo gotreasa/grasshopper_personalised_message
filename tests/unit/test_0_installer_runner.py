@@ -20,3 +20,13 @@ def describe_greet():
         """🧪 should say Hello boss when ower is Daniel and the name is Daniel"""
 
         assert personalised_message.greet("Daniel", "Daniel") == "Hello boss"
+
+    def should_say_hello_guest_non_matching_names():
+        """🧪 should say Hello guest when ower is Sam and the name is Daniel"""
+
+        assert personalised_message.greet("Sam", "Daniel") == "Hello guest"
+
+    def should_say_hello_boss_matching_Conor():
+        """🧪 should say Hello boss when ower is Conor and the name is Conor"""
+
+        assert personalised_message.greet("Conor", "Conor") == "Hello boss"

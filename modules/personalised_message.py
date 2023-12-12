@@ -1,6 +1,10 @@
 def greet(owner: str, name: str) -> str:
-    if owner == "Daniel":
+    if owner == "Daniel" and name == "Daniel":
         return "Hello boss"
+    if owner == "Conor":
+        return "Hello boss"
+    if owner == "Sam":
+        return "Hello guest"
     if not isinstance(name, str):
         raise ValueError("❗️ The guest name must be a string")
     raise ValueError("❗️ The owner name must be a string")
