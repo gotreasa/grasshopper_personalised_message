@@ -47,3 +47,8 @@ def describe_greet():
         """🧪 should say Hello guest when ower is Daniel and the name is Danielle"""
 
         assert personalised_message.greet("Daniel", "Danielle") == "Hello guest"
+
+    def should_say_hello_guest_sligtly_different_names_Michele():
+        """🧪 should say Hello guest when ower is Michele and the name is Michel"""
+
+        assert personalised_message.greet("Michele", "Michel") == "Hello guest"
