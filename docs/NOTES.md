@@ -10,8 +10,8 @@
 
 ## 🍅 Pomodoro 1
 
-- 🚧 should error when something other than a string is entered for the owner
-- ⚠ should error when something other than a string is entered for the name
+- ✅ should error when something other than a string is entered for the owner
+- 🚧 should error when something other than a string is entered for the name
 - ⚠ should say Hello boss when ower is Daniel and the name is Daniel
 - ⚠ should say Hello boss when ower is Conor and the name is Conor
 - ⚠ should say Hello boss when ower is owen and the name is Owen
