@@ -16,6 +16,6 @@
 - ✅ should say Hello guest when ower is Sam and the name is Daniel
 - ✅ should say Hello boss when ower is Conor and the name is Conor
 - ✅ should say Hello boss when ower is owen and the name is Owen
-- 🚧 should say Hello boss when ower is owen Williams and the name is Owen williams
-- ⚠ should say Hello guest when ower is Daniel and the name is Danielle
+- ✅ should say Hello boss when ower is owen Williams and the name is Owen williams
+- 🚧 should say Hello guest when ower is Daniel and the name is Danielle
 - ⚠ should say Hello guest when ower is Michele and the name is Michel

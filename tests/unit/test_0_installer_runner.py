@@ -2,6 +2,8 @@ import pytest
 
 from modules import personalised_message
 
+BOSS_MESSAGE = "Hello boss"
+
 
 def describe_greet():
     def should_error_when_owner_not_string():
@@ -19,7 +21,7 @@ def describe_greet():
     def should_say_hello_boss_matching_names():
         """🧪 should say Hello boss when ower is Daniel and the name is Daniel"""
 
-        assert personalised_message.greet("Daniel", "Daniel") == "Hello boss"
+        assert personalised_message.greet("Daniel", "Daniel") == BOSS_MESSAGE
 
     def should_say_hello_guest_non_matching_names():
         """🧪 should say Hello guest when ower is Sam and the name is Daniel"""
@@ -29,14 +31,19 @@ def describe_greet():
     def should_say_hello_boss_matching_Conor():
         """🧪 should say Hello boss when ower is Conor and the name is Conor"""
 
-        assert personalised_message.greet("Conor", "Conor") == "Hello boss"
+        assert personalised_message.greet("Conor", "Conor") == BOSS_MESSAGE
 
     def should_say_hello_boss_matching_different_cases():
         """🧪 should say Hello boss when ower is owen and the name is Owen"""
 
-        assert personalised_message.greet("owen", "Owen") == "Hello boss"
+        assert personalised_message.greet("owen", "Owen") == BOSS_MESSAGE
 
     def should_say_hello_boss_matching_different_cases_multiple_name():
         """🧪 should say Hello boss when ower is owen Williams and the name is Owen williams"""
 
-        assert personalised_message.greet("owen Williams", "Owen williams") == "Hello boss"
+        assert personalised_message.greet("owen Williams", "Owen williams") == BOSS_MESSAGE
+
+    def should_say_hello_guest_sligtly_different_names_Daniel():
+        """🧪 should say Hello guest when ower is Daniel and the name is Danielle"""
+
+        assert personalised_message.greet("Daniel", "Danielle") == "Hello guest"
