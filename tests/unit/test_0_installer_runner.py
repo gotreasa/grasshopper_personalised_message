@@ -1,11 +1,11 @@
-import os
+import pytest
 
 from modules import personalised_message
 
 
-def describe_dummy_kata():
-    def should_print_title(capsys):
-        """🧪 expect the dummy kata prints the title"""
-        personalised_message.print_the_title()
-        out, _err = capsys.readouterr()
-        assert "😊 Welcome to Dummy Kata" in out
+def describe_greet():
+    def should_error_when_not_string():
+        """🧪 should error when something other than a string is entered for the owner"""
+
+    with pytest.raises(ValueError, match="❗️ The owner name must be a string"):
+        personalised_message.greet(80, "Daniel")
